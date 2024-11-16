@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Mensajes para Hablar con Amigos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Aplicación de Mensajes</h1>
+        </header>
+
+        <main>
+            <div id="login-container">
+                <h2>¡Bienvenido! Regístrate o ingresa con tu nombre de usuario:</h2>
+                <form id="form-login">
+                    <input type="text" id="username" placeholder="Tu nombre de usuario" required>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+
+            <div id="chat-container" style="display: none;">
+                <h2>Chat con Amigos</h2>
+                <div id="messages-list">
+                    <!-- Los mensajes se mostrarán aquí -->
+                </div>
+                <form id="form-message">
+                    <input type="text" id="message-input" placeholder="Escribe un mensaje..." required>
+                    <button type="submit">Enviar</button>
+                </form>
+                <button id="logout-btn">Cerrar sesión</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 - Aplicación de Mensajes</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

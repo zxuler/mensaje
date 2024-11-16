@@ -1,0 +1,110 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#app {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilos de la lista de mensajes */
+#messages-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los mensajes */
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+}
+
+.message.sent {
+    background-color: #d1ffd6;
+    align-self: flex-end;
+}
+
+.message.received {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+}
+
+/* Estilos del formulario */
+#form-login, #form-message {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#username, #message-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+/* Botón de cerrar sesión */
+#logout-btn {
+    background-color: #ff3d00;
+    color: white;
+    margin-top: 20px;
+}
+
+#logout-btn:hover {
+    background-color: #d32f2f;
+}
